@@ -13,12 +13,13 @@
 # Download ktlint
 KTLINT="0.37.0"
 echo Using Ktlint $KTLINT
+cp scripts/pre-push.sh .git/hooks/pre-push
 cd ..
 mkdir -p oppia-android-tools
 cd oppia-android-tools
-curl -sSL https://github.com/pinterest/ktlint/releases/download/$KTLINT/ktlint
-chmod a+x ktlint
+curl -sSL https://github.com/pinterest/ktlint/releases/download/$KTLINT/ktlint > ktlintt
+chmod a+x ktlintt
 echo Ktlint file downloaded
-
+bash ktlintt --version
 # Move file from script folder to .git/hooks folder
-cp scripts/pre-push.sh .git/hooks/pre-push
+#cp scripts/pre-push.sh .git/hooks/pre-push
