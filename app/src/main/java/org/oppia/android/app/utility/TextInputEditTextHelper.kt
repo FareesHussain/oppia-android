@@ -4,9 +4,9 @@ import android.text.Editable
 import android.text.TextWatcher
 import com.google.android.material.textfield.TextInputEditText
 
-  /** TextViewHelper helps to set the [TextChangedListener] to [TextInputEditText] or any [EditText]. */
-  class TextInputEditTextHelper {
-    companion object {
+/** TextViewHelper helps to set the [TextChangedListener] to [TextInputEditText] or any [EditText]. */
+class TextInputEditTextHelper {
+  companion object {
     /**
      * This method helps to perform action on [onTextChanged] function of [TextChangedListener]
      * @param onTextChanged it is a lambda function
