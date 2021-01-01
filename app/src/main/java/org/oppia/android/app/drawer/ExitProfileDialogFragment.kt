@@ -36,13 +36,13 @@ class ExitProfileDialogFragment : DialogFragment() {
   lateinit var exitProfileDialogInterface: ExitProfileDialogInterface
 
   override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-    val args =
-      checkNotNull(arguments) { "Expected arguments to be pass to ExitProfileDialogFragment" }
+      val args =
+        checkNotNull(arguments) { "Expected arguments to be pass to ExitProfileDialogFragment" }
 
-    val isFromNavigationDrawer = args.getBoolean(
-      BOOL_IS_FROM_NAVIGATION_DRAWER_EXTRA_KEY,
-      false
-    )
+      val isFromNavigationDrawer = args.getBoolean(
+        BOOL_IS_FROM_NAVIGATION_DRAWER_EXTRA_KEY,
+        false
+      )
 
     if (isFromNavigationDrawer) {
       exitProfileDialogInterface =
