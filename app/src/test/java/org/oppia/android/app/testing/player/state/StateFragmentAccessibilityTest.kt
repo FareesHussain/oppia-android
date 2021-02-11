@@ -76,6 +76,12 @@ import javax.inject.Singleton
 @Config(application = StateFragmentAccessibilityTest.TestApplication::class)
 class StateFragmentAccessibilityTest {
 
+
+
+
+
+
+
   @Inject
   lateinit var profileTestHelper: ProfileTestHelper
 
