@@ -43,6 +43,10 @@ public final class ImageViewBindingAdapters {
     imageView.setImageResource(drawableResourceId);
   }
 
+
+
+
+
   /**
    * Binds the specified [LessonThumbnailGraphic] as the source for the [ImageView].
    * <p/>
@@ -55,7 +59,11 @@ public final class ImageViewBindingAdapters {
       LessonThumbnailGraphic thumbnailGraphic
   ) {
     int drawableResourceId;
-    switch (thumbnailGraphic) {
+    switch (thumbnailGraphic)          {
+
+
+
+
       case BAKER:
         drawableResourceId = R.drawable.lesson_thumbnail_graphic_baker;
         break;
