@@ -40,7 +40,7 @@ public final class ImageViewBindingAdapters {
       @NonNull ImageView imageView,
       @DrawableRes int drawableResourceId
   ) {
-          imageView.setImageResource(drawableResourceId);
+    imageView.setImageResource(drawableResourceId);
   }
 
   /**
