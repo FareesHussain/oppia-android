@@ -314,7 +314,3 @@ message HelpIndex {
     bool everything_revealed = 3;
   }
 }
-
-message help_index {
-    bool same_state = 4;
-}
